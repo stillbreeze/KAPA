@@ -1,0 +1,10 @@
+Cython==0.23
+h5py==2.5.0
+Keras==0.1.2
+nltk==3.0.4
+numpy==1.9.2
+PyYAML==3.11
+scipy==0.16.0
+six==1.9.0
+textblob==0.9.1
+Theano==0.7.0
