@@ -1,7 +1,9 @@
+"""Using the rural.txt corpora in nltk_data. Change the path accordingly at line 21"""
+
 from textblob import TextBlob as tb
 
-def count_words(doc):
-	return len(doc.sentences)
+def count_words(blob):
+	return len(blob.sentences)
 
 def make_bloblist(bloblist):
     f = open('/home/ashar/nltk_data/corpora/abc/rural.txt','r')

@@ -4,19 +4,26 @@ from __future__ import division
 import math
 from textblob import TextBlob as tb
 
-
+#calculates normalized term frequency
 def tf(word, blob):
     return blob.words.count(word) / len(blob.words)
 
+#calculates number of documents containing a word
 def n_containing(word, bloblist):
     return sum(1 for blob in bloblist if word in blob)
 
+#calculates the inverse document frequency
 def idf(word, bloblist):
     return math.log(len(bloblist) / (1 + n_containing(word, bloblist)))
 
+#calculates the final score for each word
 def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
 
+#calcualates the score for each sentence
+#def sent_score():
+
+#builds a list of documents
 def make_bloblist(bloblist):
     f = open('/home/ashar/nltk_data/corpora/abc/rural.txt','r')
     var = f.read()
