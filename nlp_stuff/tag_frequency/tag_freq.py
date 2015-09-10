@@ -8,9 +8,9 @@ data = inputdoc.read()
 paragraphs = data.split("\n\n")
 
 for number,paragraph in enumerate(paragraphs):
-	print "Paragraph no. {}",format(number)
+	print "Paragraph no. {}".format(number + 1)
 	for num,line in enumerate(paragraph.split("\n")):
-		print "Line no. {}".format(num)
+		print "Line no. {}".format(num + 1)
 		# Processing here
 		text = nltk.word_tokenize(line)
 		# POS tagging
