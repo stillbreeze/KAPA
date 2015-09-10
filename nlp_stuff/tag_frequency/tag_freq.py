@@ -19,9 +19,11 @@ for number,paragraph in enumerate(paragraphs):
 		freq_dict = {}
 		# No of words in sentence
 		count = 0
+		# Make dictionary for POS frequency
 		for tagged_word in pos_text:
 			freq_dict[tagged_word[1]] = freq_dict.get(tagged_word[1], 0) + 1
 			count += 1
+		# Normalise data
 		for entry in freq_dict:
 			freq_dict[entry]/=count
 		print freq_dict
