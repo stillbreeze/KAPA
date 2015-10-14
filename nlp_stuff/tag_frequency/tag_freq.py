@@ -2,7 +2,7 @@ from __future__ import division
 import nltk
 from textblob import TextBlob as tb
 
-inputdoc = open("rural.txt")
+inputdoc = open("/home/ashar/nltk_data/corpora/abc/rural.txt")
 data = inputdoc.read()
 # Break down into documents
 paragraphs = data.split("\n\n")
