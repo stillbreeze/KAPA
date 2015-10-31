@@ -1,8 +1,8 @@
 Cython==0.23
 h5py==2.5.0
-Keras==0.1.2
+Keras==0.2.0
 nltk==3.0.4
-numpy==1.9.2
+numpy==1.10.1
 PyYAML==3.11
 scipy==0.16.0
 six==1.9.0
